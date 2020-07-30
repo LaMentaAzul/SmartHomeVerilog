@@ -1,0 +1,10 @@
+E:/git/SmartHomeVerilog/SmartHome.v {2 {vlog -work work -vopt -stats=none E:/git/SmartHomeVerilog/SmartHome.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+** Warning: (vlog-6) -- Waiting for lock by "Asus@DARKARTS, pid = 4344
+". Lockfile is "E:/git/SmartHomeVerilog/work/_lock".
+
+} {} {}} E:/git/SmartHomeVerilog/SmartHome_tb.v {1 {vlog -work work -vopt -stats=none E:/git/SmartHomeVerilog/SmartHome_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+
+} {} {}}
