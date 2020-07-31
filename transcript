@@ -59,3 +59,64 @@ vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
 # ** Error: (vlog-13038) E:/git/SmartHomeVerilog/SmartHomeLight.v(17): near ")": Missing port in ansi port list.
 # End time: 23:09:02 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
+# Ctrl+G  ==>  Goto
+# Ctrl+H  ==>  Replace
+# Ctrl+U  ==>  Delete Line
+# Ctrl+W  ==>  Add Selection To Wave
+vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:26:50 on Jul 31,2020
+# vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v 
+# -- Compiling module LightSystem
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(72): near "if": syntax error, unexpected if.
+# ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(81): 'STATE5' already exists - must not be redefined.
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(81): near "if": syntax error, unexpected if, expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
+# ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(84): (vlog-13205) Syntax error found in the scope following 'turn_lamp_off'. Is there a missing '::'?
+# End time: 23:26:50 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:27:06 on Jul 31,2020
+# vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v 
+# -- Compiling module LightSystem
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(72): near "if": syntax error, unexpected if.
+# ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(81): 'STATE5' already exists - must not be redefined.
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(81): near "if": syntax error, unexpected if, expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
+# ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(84): (vlog-13205) Syntax error found in the scope following 'turn_lamp_off'. Is there a missing '::'?
+# End time: 23:27:06 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:28:25 on Jul 31,2020
+# vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v 
+# -- Compiling module LightSystem
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(73): near "begin": syntax error, unexpected begin.
+# ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(81): 'STATE5' already exists - must not be redefined.
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(81): near "if": syntax error, unexpected if, expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
+# ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(84): (vlog-13205) Syntax error found in the scope following 'turn_lamp_off'. Is there a missing '::'?
+# End time: 23:28:25 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# Load canceled
+# Load canceled
+vlog -work E:/git/SmartHomeVerilog/work -refresh -force_refresh
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:38:11 on Jul 31,2020
+# vlog -reportprogress 300 -work E:/git/SmartHomeVerilog/work -refresh -force_refresh 
+# End time: 23:38:11 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work E:/git/SmartHomeVerilog/work -refresh -force_refresh
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:38:12 on Jul 31,2020
+# vcom -reportprogress 300 -work E:/git/SmartHomeVerilog/work -refresh -force_refresh 
+# End time: 23:38:12 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui mtiOvm.ovm_pkg
+# vsim -gui mtiOvm.ovm_pkg 
+# Start time: 23:38:46 on Jul 31,2020
+# ** Error: (vsim-1962) Can't create implicit optimized design in non-writable library C:/modeltech64_10.5/ovm-2.1.2.
+# Permission denied. (errno = EACCES)
+# Loading sv_std.std
+# Loading sv_std.mti_fli
+# Loading mtiOvm.ovm_pkg
+# End time: 23:40:02 on Jul 31,2020, Elapsed time: 0:01:16
+# Errors: 1, Warnings: 0

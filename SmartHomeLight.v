@@ -13,7 +13,7 @@ module LightSystem(
     output reg click_on_turn_off_button,
     output reg waiting,
     output reg lamp_remains_off,
-    output reg lampstate,
+    output reg lampstate
     );
 
 
@@ -68,9 +68,9 @@ STATE2:
 	  next_state = STATE2;
 
  STATE3:
-   turn_lamp_on = 1;
-     if(keypad==1'b1)
+    if(keypad==1'b1)    
        begin
+        turn_lamp_on = 1;
         next_state = STATE5;
         click_on_turn_off_button =  1;
 	lampstate=1;
