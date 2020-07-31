@@ -7,7 +7,6 @@ module SmartHomeLight_tb;
 	reg onClick;
 	reg offClick;
 	reg keypad;
-	reg timer;
 	reg state;
         reg lampstate;
 
@@ -24,30 +23,28 @@ module SmartHomeLight_tb;
 	home_security uut (
 		.clk(clk), 
 		.reset(reset), 
-		.password_c(password_c), 
-		.password_w(password_w), 
+		.onClick(onClick), 
+		.offClick(offClick), 
 		.pass_repeat(pass_repeat), 
 		.keypad(keypad), 
-		.timer(timer), 
-		.state(state), 
+		.state(state),
+                .lampstate (lampstate),
 		.initialize(initialize), 
-		.insert_password(insert_password), 
+		.turn_lamp_on(turn_lamp_on), 
 		.waiting(waiting), 
-		.tryagain(tryagain), 
-		.open_the_door(open_the_door), 
-		.lock_the_door(lock_the_door), 
-		.alarm(alarm)
+		.turn_lamp_off(turn_lamp_off), 
+		.click_on_turn_on_button(click_on_turn_on_button), 
+		.click_on_turn_off_button(click_on_turn_off_button), 
+		.lamp_remains_off(lamp_remains_off)
 	);
 
 	initial begin
 		// Initialize Inputs
 		clk = 0;
 		reset = 0;
-		password_c = 1;
-		password_w = 0;
-		pass_repeat = 0;
+		onClick = 1;
+		offClick = 0;
 		keypad = 1;
-		timer = 0;
 		state = 0;
 
 		// Wait 100 ns for global reset to finish
@@ -55,11 +52,9 @@ module SmartHomeLight_tb;
 		
 		clk = 1;
 		reset = 1;
-		password_c = 1;
-		password_w = 0;
-		pass_repeat = 0;
+		onClick = 1;
+		offClick = 0;
 		keypad = 1;
-		timer = 0;
 		state = 0;
 
 		// Wait 100 ns for global reset to finish
@@ -67,57 +62,11 @@ module SmartHomeLight_tb;
 		
 		clk = 0;
 		reset = 0;
-		password_c = 1;
-		password_w = 0;
-		pass_repeat = 0;
+		onClick = 1;
+		offClick = 0;
 		keypad = 1;
-		timer = 0;
 		state = 0;
 
-		// Wait 100 ns for global reset to finish
-		#100;
-		
-		clk = 1;
-		reset = 0;
-		password_c = 1;
-		password_w = 0;
-		pass_repeat = 0;
-		keypad = 1;
-		timer = 0;
-		state = 0;
-
-		// Wait 100 ns for global reset to finish
-		#100;
-		clk = 0;
-		reset = 0;
-		password_c = 1;
-		password_w = 0;
-		pass_repeat = 0;
-		keypad = 1;
-		timer = 0;
-		state = 0;
-
-		// Wait 100 ns for global reset to finish
-		#100;
-		clk = 1;
-		reset = 0;
-		password_c = 1;
-		password_w = 0;
-		pass_repeat = 0;
-		keypad = 1;
-		timer = 0;
-		state = 0;
-
-		// Wait 100 ns for global reset to finish
-		#100;
-        clk = 0;
-		reset = 0;
-		password_c = 1;
-		password_w = 0;
-		pass_repeat = 0;
-		keypad = 1;
-		timer = 0;
-		state = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;

@@ -8,7 +8,7 @@ module SmartHomeLight_tb;
 	reg offClick;
 	reg keypad;
 	reg state;
-        reg lampstate;
+
 
 	// Outputs
 	wire initialize;
@@ -18,6 +18,7 @@ module SmartHomeLight_tb;
 	wire click_on_turn_off_button;
 	wire waiting;
 	wire lamp_remains_off;
+        wire lamp_state;
 
 	// Instantiate the Unit Under Test (UUT)
 	home_security uut (

@@ -24,3 +24,38 @@ vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
 # ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(84): (vlog-13205) Syntax error found in the scope following 'turn_lamp_off'. Is there a missing '::'?
 # End time: 22:56:56 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:06:16 on Jul 31,2020
+# vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v 
+# -- Compiling module LightSystem
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(72): near "if": syntax error, unexpected if.
+# ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(81): 'STATE5' already exists - must not be redefined.
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(81): near "if": syntax error, unexpected if, expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
+# ** Error: E:/git/SmartHomeVerilog/SmartHomeLight.v(84): (vlog-13205) Syntax error found in the scope following 'turn_lamp_off'. Is there a missing '::'?
+# End time: 23:06:16 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:08:27 on Jul 31,2020
+# vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v 
+# -- Compiling module LightSystem
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(16): near "output": syntax error, unexpected output, expecting ')'.
+# End time: 23:08:27 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:08:47 on Jul 31,2020
+# vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v 
+# -- Compiling module LightSystem
+# ** Error: (vlog-13069) E:/git/SmartHomeVerilog/SmartHomeLight.v(16): near "output": syntax error, unexpected output, expecting ')'.
+# End time: 23:08:47 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:09:02 on Jul 31,2020
+# vlog -reportprogress 300 -work work E:/git/SmartHomeVerilog/SmartHomeLight.v 
+# -- Compiling module LightSystem
+# ** Error: (vlog-13038) E:/git/SmartHomeVerilog/SmartHomeLight.v(17): near ")": Missing port in ansi port list.
+# End time: 23:09:02 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

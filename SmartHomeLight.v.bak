@@ -5,7 +5,6 @@ module LightSystem(
     input wire offClick,
     input wire keypad,
     input wire state,
-    input wire lampstate,
 
     output reg initialize ,
     output reg turn_lamp_on,
@@ -14,6 +13,7 @@ module LightSystem(
     output reg click_on_turn_off_button,
     output reg waiting,
     output reg lamp_remains_off
+    output reg lampstate,
     );
 
 
@@ -77,6 +77,7 @@ STATE2:
 end
 
 STATE5:
+
 if(offClick==1'b1&&keypad==1'b1&&lampstate==1)
 	  begin
    	  next_state = STATE6;
@@ -86,12 +87,18 @@ if(offClick==1'b1&&keypad==1'b1&&lampstate==1)
 	  next_state = STATE0;
 
 STATE4:
+if(keypad==1'b1)
+begin
 next_state = STATE0;
 lamp_remains_off = 1;
+end
 
 STATE6:
+if(keypad==1'b1)
+begin
 lamp_remains_off = 1;
 initialize = 1;
+end
 
 default :			
 	next_state = STATE0;
