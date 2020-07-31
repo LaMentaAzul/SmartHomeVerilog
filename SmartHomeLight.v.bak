@@ -83,7 +83,7 @@ if(offClick==1'b1&&keypad==1'b1&&lampstate==1)
     	  turn_lamp_off = 1;
 	end
         else 
-	  next_state = STATE5;
+	  next_state = STATE0;
 
 STATE4:
 next_state = STATE0;

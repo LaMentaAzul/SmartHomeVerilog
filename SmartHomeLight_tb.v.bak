@@ -1,0 +1,128 @@
+
+module SmartHomeLight_tb;
+
+	// Inputs
+	reg clk;
+	reg reset;
+	reg onClick;
+	reg offClick;
+	reg keypad;
+	reg timer;
+	reg state;
+        reg lampstate;
+
+	// Outputs
+	wire initialize;
+	wire turn_lamp_on;
+	wire turn_lamp_off;
+	wire click_on_turn_on_button;
+	wire click_on_turn_off_button;
+	wire waiting;
+	wire lamp_remains_off;
+
+	// Instantiate the Unit Under Test (UUT)
+	home_security uut (
+		.clk(clk), 
+		.reset(reset), 
+		.password_c(password_c), 
+		.password_w(password_w), 
+		.pass_repeat(pass_repeat), 
+		.keypad(keypad), 
+		.timer(timer), 
+		.state(state), 
+		.initialize(initialize), 
+		.insert_password(insert_password), 
+		.waiting(waiting), 
+		.tryagain(tryagain), 
+		.open_the_door(open_the_door), 
+		.lock_the_door(lock_the_door), 
+		.alarm(alarm)
+	);
+
+	initial begin
+		// Initialize Inputs
+		clk = 0;
+		reset = 0;
+		password_c = 1;
+		password_w = 0;
+		pass_repeat = 0;
+		keypad = 1;
+		timer = 0;
+		state = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		clk = 1;
+		reset = 1;
+		password_c = 1;
+		password_w = 0;
+		pass_repeat = 0;
+		keypad = 1;
+		timer = 0;
+		state = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		clk = 0;
+		reset = 0;
+		password_c = 1;
+		password_w = 0;
+		pass_repeat = 0;
+		keypad = 1;
+		timer = 0;
+		state = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		
+		clk = 1;
+		reset = 0;
+		password_c = 1;
+		password_w = 0;
+		pass_repeat = 0;
+		keypad = 1;
+		timer = 0;
+		state = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		clk = 0;
+		reset = 0;
+		password_c = 1;
+		password_w = 0;
+		pass_repeat = 0;
+		keypad = 1;
+		timer = 0;
+		state = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		clk = 1;
+		reset = 0;
+		password_c = 1;
+		password_w = 0;
+		pass_repeat = 0;
+		keypad = 1;
+		timer = 0;
+		state = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+        clk = 0;
+		reset = 0;
+		password_c = 1;
+		password_w = 0;
+		pass_repeat = 0;
+		keypad = 1;
+		timer = 0;
+		state = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+		// Add stimulus here
+
+	end
+      
+endmodule

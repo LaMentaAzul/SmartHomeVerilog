@@ -77,6 +77,7 @@ STATE2:
 end
 
 STATE5:
+
 if(offClick==1'b1&&keypad==1'b1&&lampstate==1)
 	  begin
    	  next_state = STATE6;
